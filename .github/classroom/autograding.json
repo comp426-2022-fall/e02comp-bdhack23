@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Grading begins Thursday 1 December",
+      "setup": "",
+      "run": "echo \"Grading for this will commence on Thursday 2 December. Use the suggested tests in the README files in the meantime to gauge what should be happening with your code.\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 300000
+    }
+  ]
+}
