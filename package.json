@@ -1,0 +1,22 @@
+{
+  "name": "comp426finalexam",
+  "version": "1.0.0",
+  "description": "final comprehensive exam for comp 426",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-fall/e02comp-bdhack23.git"
+  },
+  "author": "bdhack23",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-fall/e02comp-bdhack23/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-fall/e02comp-bdhack23#readme",
+  "dependencies": {
+    "minimist": "^1.2.7"
+  }
+}
