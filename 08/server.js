@@ -13,7 +13,7 @@ args["port"];
 
 const port = args.port || process.env.PORT || 5555;
 
-const time = Date.now();
+const time = Math.floor(Date.now() / 1000)
 
 
 const server = http.createServer((req, res) => {
