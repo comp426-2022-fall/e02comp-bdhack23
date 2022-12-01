@@ -1,2 +1,14 @@
 #!/bin/bash
-# PLACE YOUR CURL COMMAND ON THE LINE BELOW THIS ONE
+import fetch from "node-fetch";
+
+// # PLACE YOUR CURL COMMAND ON THE LINE BELOW THIS ONE
+
+const url = "https://api.weather.gov/points/36.2167,-81.6745";
+      
+const response = await fetch( url )
+
+const data = await response.json()
+
+console.log( url )
+
+console.log( data )
