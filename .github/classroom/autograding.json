@@ -1,14 +1,44 @@
 {
   "tests": [
     {
-      "name": "Grading begins Thursday 1 December",
+      "name": "Bringing graders live tonight",
       "setup": "",
-      "run": "echo \"Grading for this will commence on Thursday 2 December. Use the suggested tests in the README files in the meantime to gauge what should be happening with your code.\"",
+      "run": "echo \"We are bringing the autograder action configs live tonight, so you should see your repo update overnight with more info.\"",
+      "input": "",
+      "output": "",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Run npm install",
+      "setup": "",
+      "run": "npm install",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 300000
+      "points": 10000
+    },
+    {
+      "name": "package license set",
+      "setup": "",
+      "run": "cat package.json",
+      "input": "",
+      "output": "GPL-3.0-or-later",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10000
+    },
+    {
+      "name": "package author exists",
+      "setup": "",
+      "run": "cat package.json",
+      "input": "",
+      "output": "\"author\":",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10000
     }
   ]
 }
