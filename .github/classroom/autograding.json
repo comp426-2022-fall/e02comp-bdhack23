@@ -42,7 +42,7 @@
     },
     {
       "name": "Task 01.0",
-      "setup": "npm install && SHELL=/bin/bash",
+      "setup": "npm install",
       "run": "(timeout --signal=SIGINT 5 node 01/server.js; exit 0) & sleep 1s && curl -s http://localhost:${PORT}/app/ > test01-0.json && sleep 5s && if grep -q \"It works!\" test01-0.json; then echo \"TRUE\"; else echo \"FALSE\"; fi",
       "input": "",
       "output": "TRUE",
@@ -52,8 +52,18 @@
     },
     {
       "name": "Task 01.1",
-      "setup": "SHELL=/bin/bash",
+      "setup": "",
       "run": "PORT=5555; MESSAGE=\"$(openssl rand -hex 4)\"; (timeout --signal=SIGINT 5 node 01/server.js --port=${PORT} --message=${MESSAGE}; exit 0) & sleep 1s && curl -s http://localhost:${PORT}/app/ > test01-1.json && sleep 5s && if grep -q ${MESSAGE} test01-1.json; then echo \"TRUE\"; else echo \"FALSE\"; fi",
+      "input": "",
+      "output": "TRUE",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15000
+    },
+    {
+      "name": "Test 02.0",
+      "setup": "",
+      "run": "A=\"$(shuf -i 0-99 -n 1)\"; B=\"$(shuf -i 0-99 -n 1)\"; C=\"$(($A+$B))\"; TEST=$(node --eval \"const math = require('./02/math.js'); console.log(math.add(${A},${B}));\"); if [ $C -eq $TEST ]; then echo \"TRUE\"; else echo \"FALSE\"; fi",
       "input": "",
       "output": "TRUE",
       "comparison": "included",
