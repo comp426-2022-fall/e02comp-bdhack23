@@ -89,6 +89,36 @@
       "comparison": "included",
       "timeout": 10,
       "points": 15000
+    },
+    {
+      "name": "Test 04.0",
+      "setup": "npm install better-sqlite3 && npm install",
+      "run": "node --eval \"const db = require('./04/database.js');\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10000
+    },
+    {
+      "name": "Test 04.1",
+      "setup": "",
+      "run": "ls info.db",
+      "input": "",
+      "output": "info.db",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10000
+    },
+    {
+      "name": "Test 04.2",
+      "setup": "",
+      "run": "node --eval \"const db = require('./04/database.js'); const customertab = db.prepare('SELECT * FROM customers').columns(); console.log(customertab);\" > test04-1.txt && if grep -q \"table: 'customers',\" test04-1.txt; then echo \"TRUE\"; else echo \"FALSE\"; fi",
+      "input": "",
+      "output": "TRUE",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10000
     }
   ]
 }
