@@ -119,6 +119,36 @@
       "comparison": "included",
       "timeout": 10,
       "points": 10000
+    },
+    {
+      "name": "Test 05.0",
+      "setup": "",
+      "run": "LASTNAME=\"$(openssl rand -hex 4)\"; FIRSTNAME=\"$(openssl rand -hex 4)\"; EMAIL=\"$(openssl rand -hex 8)\"; PORT=$(shuf -i 2000-65535 -n 1); (timeout --signal=SIGINT 5 node ./05/server.js; exit 0) & sleep 1s && curl -s -X POST -d \"lastname=${LASTNAME}&firstname=${FIRSTNAME}&email=${EMAIL}\" http://localhost:5555/app/new/ && sleep 5s; (timeout --signal=SIGINT 5 node ./05/server.js --port=${PORT}; exit 0) & sleep 1s && curl -s -X GET -d \"email=${EMAIL}\" http://localhost:${PORT}/app/lookup/ > test05-0.txt && sleep 5s && if grep -q \"${LASTNAME}\" test05-0.txt; then echo \"TRUE\"; else echo \"FALSE\"; fi",
+      "input": "",
+      "output": "TRUE",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30000
+    },
+    {
+      "name": "Test 06.0",
+      "setup": "",
+      "run": "bash ./06/weather.sh",
+      "input": "",
+      "output": "\"radarStation\": \"KFCX\"",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30000
+    },
+    {
+      "name": "Test 07.0",
+      "setup": "mv ./07/weather.js ./07/weather.mjs",
+      "run": "node  ./07/weather.mjs --latitude=47.6062 --longitude=-122.3321",
+      "input": "",
+      "output": "radarStation: 'KATX'",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30000
     }
   ]
 }
