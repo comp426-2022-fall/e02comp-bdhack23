@@ -1,9 +1,9 @@
 {
   "tests": [
     {
-      "name": "Bringing graders live tonight",
+      "name": "Autograder now live",
       "setup": "",
-      "run": "echo \"We are bringing the autograder action configs live tonight, so you should see your repo update overnight with more info.\"",
+      "run": "echo \"The autograder action is now live. The actual tests that it is running are located at: https://github.com/comp426-2022-fall/assignments/blob/main/e02comp-autograder.md\"",
       "input": "",
       "output": "",
       "comparison": "regex",
