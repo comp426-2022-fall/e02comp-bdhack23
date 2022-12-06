@@ -142,7 +142,7 @@
     },
     {
       "name": "Test 07.0",
-      "setup": "mv ./07/weather.js ./07/weather.mjs",
+      "setup": "cp ./07/weather.js ./07/weather.mjs",
       "run": "node  ./07/weather.mjs --latitude=47.6062 --longitude=-122.3321",
       "input": "",
       "output": "radarStation: 'KATX'",
