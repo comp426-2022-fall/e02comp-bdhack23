@@ -1,5 +1,6 @@
 {
   "name": "comp426finalexam",
+  "type": "module",
   "version": "1.0.0",
   "description": "final comprehensive exam for comp 426",
   "main": "index.js",
@@ -7,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "git+https://github.com/comp426-2022-fall/e02comp-bdhack23.git"
   },
   "author": "bdhack23",
