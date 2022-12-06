@@ -169,6 +169,16 @@
       "comparison": "included",
       "timeout": 10,
       "points": 30000
+    },
+    {
+      "name": "Test 10.0",
+      "setup": "",
+      "run": "A=\"$(shuf -i 0-99 -n 1)\"; B=\"$(shuf -i 0-99 -n 1)\"; C=\"$(($A+$B))\"; PORT=$(shuf -i 2000-65535 -n 1); (timeout --signal=SIGINT 5 node ./10/server.js --port=${PORT}; exit 0) & sleep 1s && curl -s http://localhost:${PORT}/app/add/${A}/${B}/ > test10.txt && sleep 5s; if grep -q \"${C}\" test10.txt; then echo \"TRUE\"; else echo \"FALSE\"; fi",
+      "input": "",
+      "output": "TRUE",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30000
     }
   ]
 }
