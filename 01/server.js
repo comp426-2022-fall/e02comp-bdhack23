@@ -21,4 +21,3 @@ const server = http.createServer((req, res) => {
   server.listen(message, () => {
     console.log(`{"message": ${message}}`)
   });
-}
