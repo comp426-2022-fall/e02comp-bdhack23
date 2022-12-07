@@ -1,10 +1,10 @@
 // Require http module
-const http = require('http');
+import http = require('http');
 
 // Require fs module
-const fs = require('fs');
+import fs = require('fs');
 
-const args = require('minimist')(process.argv.slice(2));
+import args = require('minimist')(process.argv.slice(2));
 
 // Require minimist module.
 
