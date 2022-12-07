@@ -28,7 +28,9 @@ const server = http.createServer((req, res) => {
       
   })
 
-if (err) {
+process.on('uncaughtException', function(err) {
+    if(err.errno === 'EADDRINUSE') {
         let message = (`port ${port} already in use`)
             console.log(message)
-}
+    }
+});
