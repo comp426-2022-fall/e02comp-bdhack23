@@ -15,7 +15,7 @@ const port = 5555;
 
 args["message"];
 
-const message = args.message || "It works!";
+const message = "It works!";
 
 
 const server = http.createServer((req, res) => {
