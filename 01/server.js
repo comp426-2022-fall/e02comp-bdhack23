@@ -1,8 +1,8 @@
 // Require http module
-import http = from 'http';
+import http from 'http';
 
 // Require fs module
-import fs = from 'fs';
+import fs from 'fs';
 
 import args = require('minimist')(process.argv.slice(2));
 
