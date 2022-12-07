@@ -26,3 +26,15 @@ const server = http.createServer((req, res) => {
   server.listen(message, () => {
     console.log(`{"message": ${message}}`)
   });
+
+server.on('error', (error) => {
+    if (error.code === 'EADDRINUSE') {
+        left = left - 1
+        let message
+        if (showErrMsg) {
+            message = (`port ${port} already in use`)
+            console.log(message)
+            showErrMsg = false
+        }
+    }
+}
