@@ -23,12 +23,6 @@ const server = http.createServer((err, req, res) => {
     res.setHeader('Content-Type', 'text/html')
     res.end(data)
   })
-server.listen(err, message, () => {
-    if (err){
-        let message = (`port ${port} already in use`)
-        console.log(message)
-    }
-    else {
+server.listen(message, () => {
     console.log(`{"message": ${message}}`)
-    }
 });
