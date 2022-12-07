@@ -4,7 +4,9 @@ import http from 'http';
 // Require fs module
 import fs from 'fs';
 
-import args = require('minimist')(process.argv.slice(2));
+import minimist from 'minimist';
+
+var args = minimist(process.argv.slice(2));
 
 // Require minimist module.
 
