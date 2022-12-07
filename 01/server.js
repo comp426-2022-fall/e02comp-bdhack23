@@ -18,16 +18,17 @@ args["message"];
 const message = "It works!";
 
 
-const server = http.createServer((req, res) => {
+const server = http.createServer((err, req, res) => {
     res.statusCode = 200
     res.setHeader('Content-Type', 'text/html')
     res.end(data)
   })
-  server.listen(message, () => {
+server.listen(err, message, () => {
+    if (err){
+        let message = (`port ${port} already in use`)
+        console.log(message)
+    }
+    else {
     console.log(`{"message": ${message}}`)
-      
-  })
-server.on("error", function(error) {
-  let message = (`port ${port} already in use`)
-  console.log(message)
+    }
 });
