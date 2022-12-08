@@ -1,10 +1,10 @@
 #!/bin/bash
-import { createRequire } from 'module';
 import fetch from "node-fetch";
 import fs from "fs";
 // const fs = require('fs');
 
-const args = require('minimist')(process.argv.slice(2));
+var minimist = require('minimist');
+var args = minimist(process.argv.slice(2)
 
 // let latitude = args.latitude; 
 let latitude = process.argv.indexOf('latitude');
