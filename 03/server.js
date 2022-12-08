@@ -10,7 +10,7 @@ args["port"];
 // Define `port`constant
 const port = args.port || process.env.PORT || 5555;
 
-fs.readFile('./index.html', 'utf8', (err, data) => {
+fs.readFile('.03//index.html', 'utf8', (err, data) => {
   if (err) {
     console.error(err);
     return;
