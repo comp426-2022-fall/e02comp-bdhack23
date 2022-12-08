@@ -1,14 +1,11 @@
 // Require http module
-import http from 'http';
+const http = require('http');
 
 // Require fs module
-import fs from 'fs';
-
-import minimist from 'minimist';
-
-var args = minimist(process.argv.slice(2));
+const fs = require('fs');
 
 // Require minimist module.
+const args = require('minimist')(process.argv.slice(2));
 
 // Define a const `port`as 5555
 const port = args.port || 5555;
