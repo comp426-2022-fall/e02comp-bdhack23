@@ -4,13 +4,10 @@ const Database = require('Database');
 function tableCheck() {
   
 // make sure to require database
-  
-CREATE TABLE IF NOT EXISTS customers
-(
-   lastname varchar,
-   firstname varchar,
-   email varchar
-);
-  
-// module.exports = tableCheck
+const sql = `
+    CREATE TABLE IF NOT EXISTS customers (
+    lastname varchar,
+    firstname varchar,
+    email varchar)`
+return this.dao.run(sql)
 }
