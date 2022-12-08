@@ -5,7 +5,7 @@ function tableCheck() {
   
 // make sure to require database
   
-CREATE TABLE IF NOT EXISTS customers
+CREATE table IF NOT EXISTS customers
 (
    lastname varchar,
    firstname varchar,
