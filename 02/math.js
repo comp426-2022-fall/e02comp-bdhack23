@@ -7,8 +7,8 @@ const B = parseInt(prompt('Second number '));
 //add two numbers
 const sum = A + B;
 
-// console.log(math.add(${A},${B}));");
-console.log(`${sum}`);
+console.log(math.add(${A},${B}));
+// console.log(`${sum}`);
 
 // return the sum
 return sum;
