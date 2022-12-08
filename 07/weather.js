@@ -1,4 +1,5 @@
 #!/bin/bash
+import { createRequire } from 'module';
 import fetch from "node-fetch";
 import fs from "fs";
 // const fs = require('fs');
