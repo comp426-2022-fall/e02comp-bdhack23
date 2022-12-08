@@ -1,4 +1,5 @@
-import Database from 'better-sqlite3';
+const sqlite3 = require('sqlite3').verbose();
+const Database = require('Database');
 
 // Require http module
 const http = require('http');
