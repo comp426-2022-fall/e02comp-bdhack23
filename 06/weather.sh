@@ -1,5 +1,5 @@
 #!/bin/bash
-const fetch = require('node-fetch');
+const fetch = require'node-fetch'
 
 // # PLACE YOUR CURL COMMAND ON THE LINE BELOW THIS ONE
 const url = "https://api.weather.gov/points/36.2168,-81.6746";
