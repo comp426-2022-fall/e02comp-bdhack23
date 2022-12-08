@@ -1,6 +1,6 @@
 {
   "name": "comp426finalexam",
-  "type": "module",
+  "type": "commonjs",
   "version": "1.0.0",
   "description": "final comprehensive exam for comp 426",
   "main": "index.js",
