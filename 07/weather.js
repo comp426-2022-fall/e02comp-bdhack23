@@ -1,5 +1,5 @@
 #!/bin/bash
-const fetch = require('node-fetch');
+import fetch from "node-fetch";
 import fs from "fs";
 // const fs = require('fs');
 
