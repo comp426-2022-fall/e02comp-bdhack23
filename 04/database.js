@@ -1,4 +1,4 @@
-import Database from 'better-sqlite3';
+// import Database from 'better-sqlite3';
 
 // **Do I need parameters or are they not required?
 export function tableCheck() {
