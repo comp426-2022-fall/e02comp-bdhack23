@@ -1,5 +1,6 @@
 const sqlite3 = require('sqlite3').verbose();
 const Database = require('Database');
+const db = require('./04/database.js');
 
 function tableCheck() {
   
