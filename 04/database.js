@@ -1,7 +1,5 @@
-// import Database from 'better-sqlite3';
-
 // **Do I need parameters or are they not required?
-export function tableCheck() {
+function tableCheck() {
   
 // make sure to require database
 const Database = require('Database');
