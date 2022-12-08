@@ -1,6 +1,7 @@
 #!/bin/bash
 import fetch from "node-fetch";
-const fs = require('fs');
+import {fs} from 'fs';
+// const fs = require('fs');
 
 const args = require('minimist')(process.argv.slice(2));
 
