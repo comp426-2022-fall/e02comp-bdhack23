@@ -11,7 +11,7 @@ var args = minimist(process.argv.slice(2));
 // Require minimist module.
 
 // Define a const `port`as 5555
-const port = args.port || process.env.PORT || 3000;
+const port = args.port || 5555;
 
 args["message"];
 
