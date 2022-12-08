@@ -1,5 +1,5 @@
 // **Do I need parameters or are they not required?
-const math = require('mathjs')
+var math = require('mathjs');
 
 function add() {
 // create the constants for both numbers
