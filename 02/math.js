@@ -1,4 +1,3 @@
-// **Do I need parameters or are they not required?
 var math = require('mathjs');
 
 function add() {
