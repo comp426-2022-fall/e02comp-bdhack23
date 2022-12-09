@@ -23,5 +23,4 @@ const server = http.createServer((req, res) => {
   })
   server.listen(time, () => {
     console.log(`{"unixtime": ${time}}`)
-  });
-});
+    });
