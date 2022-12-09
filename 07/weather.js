@@ -4,7 +4,7 @@ import fs from "fs";
 // const fs = require('fs');
 
 var minimist = require('minimist');
-var args = minimist(process.argv.slice(2)
+var args = minimist(process.argv.slice(2));
 
 // let latitude = args.latitude; 
 let latitude = process.argv.indexOf('latitude');
