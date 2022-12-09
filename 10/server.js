@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
     res.setHeader('Content-Type', 'text/html')
     res.end(data)
   })
-  server.listen(input1,input2,sum() =>{
+  server.listen(input1,input2,sum()) =>{
     console.log(`{"input1": ${input1},"input2": ${input2},"sum:" ${sum}}`)
   });
 });
