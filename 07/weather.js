@@ -2,8 +2,8 @@
 
 var minimist = require('minimist');
 var args = minimist(process.argv.slice(2));
-import fetch from "node-fetch";
-import fs from "fs";
+var fetch = require('node-fetch');
+var fs = require('fs');
 
 // let latitude = args.latitude; 
 let latitude = process.argv.indexOf('latitude');
