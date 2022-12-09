@@ -13,6 +13,10 @@ args["port"];
 
 const port = args.port || process.env.PORT || 5555;
 
+if (port < 0 || port >= 65536){
+process.exit();
+}
+
 const time = Math.floor(Date.now() / 1000)
 
 
