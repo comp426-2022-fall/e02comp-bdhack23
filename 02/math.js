@@ -1,4 +1,5 @@
 var math = require('mathjs');
+const prompt = require("prompt-sync")({sigint:true});
 
 function add() {
 // create the constants for both numbers
