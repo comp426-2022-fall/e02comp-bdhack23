@@ -16,12 +16,12 @@ const input2 = parseInt(prompt('Second number '));
 //add two numbers
 const sum = input1 + input2;
 
-const server = http.createServer((req, res)) => {
+const server = http.createServer((req, res)){
     res.statusCode = 200
     res.setHeader('Content-Type', 'text/html')
     res.end(data)
   })
-  server.listen(input1,input2,sum()) => {
+  server.listen(input1,input2,sum()){
     console.log(`{"input1": ${input1},"input2": ${input2},"sum:" ${sum}}`)
   });
 });
