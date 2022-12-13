@@ -1,7 +1,7 @@
 // Require fs module
 const fs = require('fs');
-
 const args = require('minimist')(process.argv.slice(2));
+const prompt = require("prompt-sync")({sigint:true});
 
 // Require minimist module.
 
