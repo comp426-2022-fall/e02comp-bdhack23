@@ -3,9 +3,8 @@ var fs = require('fs')
 var express = require('express')
 var path = require('path')
 var morgan = require('morgan')
-var connect = require("connect");
 
-var app = connect();
+var app = app();
 
 
 const args = require('minimist')(process.argv.slice(2));
