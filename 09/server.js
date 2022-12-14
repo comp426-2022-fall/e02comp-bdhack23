@@ -1,9 +1,9 @@
 // Require modules
+var app = app();
 var fs = require('fs')
 var express = require('express')
 var path = require('path')
 var morgan = require('morgan')
-var app = require('express')
 
 
 const args = require('minimist')(process.argv.slice(2));
