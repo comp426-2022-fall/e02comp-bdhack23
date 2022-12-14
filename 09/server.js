@@ -4,7 +4,7 @@ var express = require('express')
 var path = require('path')
 var morgan = require('morgan')
 
-var app = app();
+var app = express();
 
 
 const args = require('minimist')(process.argv.slice(2));
