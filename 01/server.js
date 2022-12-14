@@ -17,8 +17,8 @@ const message = "It works!";
 
 const server = http.createServer((err, req, res) => {
     res.statusCode = 200
-    res.setHeader('Content-Type', 'text/html')
-    res.end(data)
+    // res.setHeader('Content-Type', 'text/html')
+    // res.end(data)
 })
 server.listen(message, () => {
     console.log(`{"message": ${message}}`)
