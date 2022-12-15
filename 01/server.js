@@ -17,7 +17,7 @@ const message = "It works!";
 
 const server = http.createServer((err, req, res) => {
     res.statusCode = 200
-    res.setHeader('Content-Type', 'text/html')
+    // res.setHeader('Content-Type', 'text/html')
     res.end(data)
 })
 
