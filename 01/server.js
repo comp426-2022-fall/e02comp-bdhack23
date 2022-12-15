@@ -10,7 +10,7 @@ const args = require('minimist')(process.argv.slice(2));
 // Define a const `port`as 5555
 const port = args.port || 5555;
 
-args["message"];
+// args["message"];
 
 const message = args.message || "It works!";
 
