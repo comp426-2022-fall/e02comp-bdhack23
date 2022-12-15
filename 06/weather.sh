@@ -1,5 +1,5 @@
 #!/bin/bash
-const fetch = require'node-fetch'
+const fetch = require('node-fetch')
 
 # PLACE YOUR CURL COMMAND ON THE LINE BELOW THIS ONE
 
