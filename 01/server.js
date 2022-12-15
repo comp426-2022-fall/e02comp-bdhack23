@@ -15,9 +15,9 @@ const port = args.port || 5555;
 const message = args.message || "It works!";
 
 
-const server = http.createServer((err, req, res) => {
-   // res.statusCode = 200
-   // res.setHeader('Content-Type', 'text/html')
+const server = http.createServer((req, res) => {
+   res.statusCode = 200
+   res.setHeader('Content-Type', 'text/html')
     res.end(data)
 })
 
