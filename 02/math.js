@@ -10,6 +10,7 @@ const second = parseInt(prompt('Second number '));
 const sum = math.add(first, second);
 
 // console.log(`math.add(${A},${B})`);
+console.log(`{"message": ${message}}`)
 console.log(`${sum}`);
 
 // return the sum
