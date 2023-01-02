@@ -1,4 +1,4 @@
-#!/bin/bash/env
+#!/bin/bash
 
 import fetch from 'node-fetch';
 
@@ -6,7 +6,7 @@ import fetch from 'node-fetch';
 
 const url="https://api.weather.gov/points/36.2168,-81.6746";
       
-const response=await fetch(url)
+let response=await fetch(url)
 
 const data=await response.json()
 
