@@ -3,14 +3,14 @@ const express = require('express');
 const app = express();
 
 const port = 5555;
-const message =  'It works'
+let message =  'It works';
 
 // app.use((request, response) => {
 //     response.json({ message: message }); 
 // });
 
-app.get('/app', (req,res)=>{
-    res.json({ message: message }); 
+app.get('/app/', (request,response)=>{
+    response.json({ message: message }); 
 })
 
 
