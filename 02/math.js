@@ -18,4 +18,4 @@ return sum;
 // module.exports = add
 }
 
-export { add };
+// export { add };
