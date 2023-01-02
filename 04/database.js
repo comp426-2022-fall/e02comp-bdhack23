@@ -1,7 +1,7 @@
 const sqlite3 = require('sqlite3').verbose();
 // const db = new sqlite3.Database(".info.db");
 
-function tableCheck() {
+function prepare() {
   
 // make sure to require database
 const sql = `
