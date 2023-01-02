@@ -1,7 +1,7 @@
 var math = require('mathjs');
 const prompt = require("prompt-sync")({sigint:true});
 
-function add() {
+export function add() {
 // create the constants for both numbers
 const first = parseInt(prompt('First number '));
 const second = parseInt(prompt('Second number '));
@@ -19,4 +19,4 @@ return sum;
 // module.exports = add
 }
 
-module.exports = { add };
+// module.exports = { add };
