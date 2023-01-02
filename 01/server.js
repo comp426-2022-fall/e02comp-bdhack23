@@ -1,29 +1,48 @@
-// Require http module
-const http = require('http');
+const express = require('express');
 
-// Require fs module
-const fs = require('fs');
+const app = express();
 
-// Require minimist module.
-const args = require('minimist')(process.argv.slice(2));
+const port = 5555;
+const message =  'It works'
 
-// Define a const `port`as 5555
-const port = args.port || 5555;
+// app.use((request, response) => {
+//     response.json({ message: message }); 
+// });
 
-// args["message"];
-
-const message = args.message || "It works!";
-
-
-const server = http.createServer((err, req, res) => {
-   // res.statusCode = 200
-   // res.setHeader('Content-Type', 'text/html')
-    res.end(data)
+app.get('/app', (req,res)=>{
+    res.json({ message: message }); 
 })
 
-console.log(`{"message": ${message}}`)
 
 
-// server.listen(message, ()) => {
-//     console.log(`{"message": ${message}}`)
-// });
+
+// // Require http module
+// const http = require('http');
+
+// // Require fs module
+// const fs = require('fs');
+
+// // Require minimist module.
+// const args = require('minimist')(process.argv.slice(2));
+
+// // Define a const `port`as 5555
+// const port = args.port || 5555;
+
+// // args["message"];
+
+// const message = args.message || "It works!";
+
+
+// const server = http.createServer((err, req, res) => {
+//    // res.statusCode = 200
+//    // res.setHeader('Content-Type', 'text/html')
+//    res.send({message: message})
+//     res.end(data)
+// })
+
+// console.log(`{"message": ${message}}`)
+
+
+server.listen(port, () => {
+    console.log(`{"message": ${message}}`)
+});
