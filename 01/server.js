@@ -6,8 +6,8 @@ const port = 5555;
 
 args["message"];
 
-const message = args.message || "It works!";
-// let message =  'It works';
+// const message = args.message || "It works!";
+const message =  'It works!';
 
 // app.use((request, response) => {
 //     response.json({ message: message }); 
