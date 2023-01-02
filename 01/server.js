@@ -43,6 +43,6 @@ app.get('/app', (req,res)=>{
 // console.log(`{"message": ${message}}`)
 
 
-server.listen(port, () => {
+app.listen(port, () => {
     console.log(`{"message": ${message}}`)
 });
