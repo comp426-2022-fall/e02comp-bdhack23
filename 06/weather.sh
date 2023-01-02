@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/bash/env
+
 import fetch from 'node-fetch';
 
 # PLACE YOUR CURL COMMAND ON THE LINE BELOW THIS ONE
