@@ -3,7 +3,11 @@ const express = require('express');
 const app = express();
 
 const port = 5555;
-let message =  'It works';
+
+args["message"];
+
+const message = args.message || "It works!";
+// let message =  'It works';
 
 // app.use((request, response) => {
 //     response.json({ message: message }); 
